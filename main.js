@@ -19,10 +19,21 @@ Your options are:
 `
 
 const toDoHandler = function(number) {
-  if(number === '6') {
-    interface.close();
-  } else {
-    interface.question(menu, toDoHandler);
+  // if(number === '6') {
+  //   interface.close();
+  // } else {
+  //   interface.question(menu, toDoHandler);
+  // }
+  switch(number) {
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+      interface.question(menu, toDoHandler);
+      break;
+    case '6':
+      interface.close();  
   }
 }
 
