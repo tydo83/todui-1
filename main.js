@@ -17,3 +17,15 @@ Your options are:
 6. Quit.
 
 `
+
+const toDoHandler = function(number) {
+  if(number === '6') {
+    interface.close();
+  } else {
+    interface.question(menu, toDoHandler);
+  }
+}
+
+interface.question(menu, toDoHandler);
+
+
