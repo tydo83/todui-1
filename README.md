@@ -3,7 +3,7 @@
 * You'll start with the `readLine` interface code, because that's annoying template code. But you don't have `readline` itself available in your code yet. (If you run `node main.js` you'll get an error that `readline` hasn't been defined, which makes sense, given that it's a variable we haven't declared yet.) So! `require` it in. Now `readline.createInterface` exists, and you can use the boilerplate code that gives you that `interface` variable to use.
 * Since we'd like to continue to display the menu for the user until they're ready to quit, it makes sense to save it into a variable. What we want is a multi-line string with 6 numbered options: add a todo, remove a todo, remove all completed todos, toggle a todo's completeness, toggle a todo's priority from high to low, and quit. Preferably it goes on multiple lines, so it can look _something_ like this:
 
-[screenshot of menu text](./assets/menu.png)
+![screenshot of menu text](./assets/menu.png)
 
   You can always reword it however you'd like, as long as you've got all those options. And whether you use a backtick string or `\n` to make new lines, **make sure it's on multiple lines**!
   
